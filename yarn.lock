@@ -1825,7 +1825,7 @@
     statuses "2.0.1"
     uuid "^3.3.2"
 
-"@strapi/utils@4.1.12":
+"@strapi/utils@4.1.12", "@strapi/utils@^4.1.9":
   version "4.1.12"
   resolved "https://registry.npmjs.org/@strapi/utils/-/utils-4.1.12.tgz"
   integrity sha512-s5qI3+5KOfaksl4DvY28F68KyfmJz9oeIIMEbGX03CtnXerejws1gDKVIuyxHNXsQL1MkgG0Ejsyl4l4Pb04eA==
@@ -3747,6 +3747,13 @@ cross-env@^7.0.3:
   integrity sha512-+/HKd6EgcQCJGh2PSjZuUitQBQynKor4wrFbRg4DtAgS1aWO+gU52xpH7M9ScGgXSYmAVS9bIJ8EzuaGw0oNAw==
   dependencies:
     cross-spawn "^7.0.1"
+
+cross-fetch@^3.1.5:
+  version "3.1.5"
+  resolved "https://registry.yarnpkg.com/cross-fetch/-/cross-fetch-3.1.5.tgz#e1389f44d9e7ba767907f7af8454787952ab534f"
+  integrity sha512-lvb1SBsI0Z7GDwmuid+mU3kWVBwTVUbe7S0H52yaaAdQOXq2YktTCZdlAcNKFzE6QtRz0snpw9bNiPeOIkkQvw==
+  dependencies:
+    node-fetch "2.6.7"
 
 cross-spawn@^6.0.0:
   version "6.0.5"
@@ -6947,6 +6954,13 @@ media-typer@0.3.0:
   resolved "https://registry.npmjs.org/media-typer/-/media-typer-0.3.0.tgz"
   integrity sha512-dq+qelQ9akHpcOl/gUVRTxVIOkAJ1wR3QAvb4RsVjS8oVoFjDGTc679wJYmUmknUF5HwMLOgb5O+a3KxfWapPQ==
 
+meilisearch@^0.25.1:
+  version "0.25.1"
+  resolved "https://registry.yarnpkg.com/meilisearch/-/meilisearch-0.25.1.tgz#0dc25ffad64e6e50eb3da6c0691b0ff54f8578bf"
+  integrity sha512-20jO0pK9BhghxHSkOLbdoYn58h/Z0PNL3JQcRq7ipNIeqrxkAetCZZ6ttJC3uxcz0jVglmiFoSXu3Z/lEOLOLQ==
+  dependencies:
+    cross-fetch "^3.1.5"
+
 memfs@^3.4.3:
   version "3.4.4"
   resolved "https://registry.npmjs.org/memfs/-/memfs-3.4.4.tgz"
@@ -9508,6 +9522,14 @@ strapi-plugin-import-export-entries@^1.2.0:
     "@monaco-editor/react" "4.4.5"
     csvtojson "2.0.10"
     react-singleton-hook "3.3.0"
+
+strapi-plugin-meilisearch@^0.6.6:
+  version "0.6.6"
+  resolved "https://registry.yarnpkg.com/strapi-plugin-meilisearch/-/strapi-plugin-meilisearch-0.6.6.tgz#1c35d4612437436cc9c151ec1356d3eb007873ca"
+  integrity sha512-0wRFGAheAhqG8MQ2DxnBhQAhYvLeDwJ6B4MWWilDmc0SY5DMjIy4HIlA/6H9MlgbBEW8t+4lHCEMZq44ae4MCg==
+  dependencies:
+    "@strapi/utils" "^4.1.9"
+    meilisearch "^0.25.1"
 
 stream-browserify@^3.0.0:
   version "3.0.0"
