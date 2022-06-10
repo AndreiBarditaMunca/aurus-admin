@@ -4,9 +4,9 @@ module.exports = ({ env }) => ({
     connection: {
       host: env("DATABASE_HOST", "127.0.0.1"),
       port: env.int("DATABASE_PORT", 5432),
-      database: env("DATABASE_NAME", "database-1aurus"),
-      user: env("DATABASE_USERNAME", "aurus"),
-      password: env("DATABASE_PASSWORD", "aurus.147"),
+      database: env("DATABASE_NAME", "aurus"),
+      user: env("DATABASE_USERNAME", "admin"),
+      password: env("DATABASE_PASSWORD", "admin"),
       ssl: env.bool("DATABASE_SSL", false),
     },
     useNullAsDefault: true,
