@@ -9,6 +9,5 @@ module.exports = ({ env }) => ({
       password: env("DATABASE_PASSWORD", "admin"),
       ssl: env.bool("DATABASE_SSL", false),
     },
-    useNullAsDefault: true,
   },
 });
