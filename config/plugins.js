@@ -3,7 +3,4 @@ module.exports = ({ env }) => ({
     enabled: true,
   },
   ckeditor: true,
-  seo: {
-    enabled: true,
-  },
 });
