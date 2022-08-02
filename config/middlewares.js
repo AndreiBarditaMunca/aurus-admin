@@ -18,7 +18,7 @@ module.exports = ({ env }) => [
     name: "strapi::cors",
     config: {
       enabled: true,
-      header: "*",
+      headers: "*",
       origin: ["*"],
     },
   },
