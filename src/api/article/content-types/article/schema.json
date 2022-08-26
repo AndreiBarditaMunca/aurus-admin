@@ -16,13 +16,6 @@
       "type": "string",
       "required": true
     },
-    "subtitle": {
-      "type": "string",
-      "required": true
-    },
-    "posted_on": {
-      "type": "string"
-    },
     "created_date": {
       "required": true,
       "type": "date"
@@ -41,8 +34,7 @@
     "excerpt": {
       "type": "string",
       "required": true,
-      "minLength": 5,
-      "maxLength": 80
+      "minLength": 5
     },
     "content": {
       "type": "richtext",
@@ -62,6 +54,11 @@
       "type": "integer",
       "default": 0,
       "min": 0
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
     }
   }
 }
