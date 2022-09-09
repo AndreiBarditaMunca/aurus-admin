@@ -90,7 +90,7 @@
       "min": 0,
       "pluginOptions": {
         "i18n": {
-          "localized": true
+          "localized": false
         }
       }
     },
