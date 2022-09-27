@@ -16,7 +16,7 @@
     }
   },
   "attributes": {
-    "Title": {
+    "title": {
       "type": "string",
       "required": true,
       "pluginOptions": {
@@ -25,9 +25,9 @@
         }
       }
     },
-    "Slug": {
+    "slug": {
       "type": "uid",
-      "targetField": "Title",
+      "targetField": "title",
       "required": true
     }
   }

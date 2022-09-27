@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "glossaries",
+  "collectionName": "tutorials_topic",
   "info": {
-    "singularName": "glossary",
-    "pluralName": "glossaries",
-    "displayName": "Glossary",
+    "singularName": "tutorial-topic",
+    "pluralName": "tutorials-topic",
+    "displayName": "Tutorial Topic",
     "description": ""
   },
   "options": {
@@ -25,19 +25,15 @@
       "type": "string",
       "required": true
     },
-    "description": {
+    "slug": {
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
-      "type": "text",
+      "type": "uid",
+      "targetField": "title",
       "required": true
-    },
-    "category": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::glossary-category.glossary-category"
     }
   }
 }
