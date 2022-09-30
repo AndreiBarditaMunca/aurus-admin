@@ -54,21 +54,6 @@
       "required": true,
       "default": "read"
     },
-    "difficulty": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "enumeration",
-      "enum": [
-        "beginner",
-        "medium",
-        "advanced"
-      ],
-      "required": true,
-      "default": "beginner"
-    },
     "description": {
       "pluginOptions": {
         "i18n": {
@@ -109,6 +94,11 @@
       "type": "uid",
       "targetField": "title",
       "required": true
+    },
+    "difficulty": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::tutorial-difficulty.tutorial-difficulty"
     }
   }
 }

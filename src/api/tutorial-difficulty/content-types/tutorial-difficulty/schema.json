@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tutorial_difficulties",
+  "info": {
+    "singularName": "tutorial-difficulty",
+    "pluralName": "tutorial-difficulties",
+    "displayName": "Tutorial Difficulty",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "order_number": {
+      "type": "integer",
+      "required": true,
+      "min": 0,
+      "unique": false
+    }
+  }
+}
