@@ -70,7 +70,7 @@
         }
       },
       "type": "richtext",
-      "required": true
+      "required": false
     },
     "thumbnail": {
       "type": "media",
@@ -99,6 +99,19 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::tutorial-difficulty.tutorial-difficulty"
+    },
+    "video": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "videos"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }
